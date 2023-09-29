@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/* CSS RESET */
+/* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.gallary {
+  margin: auto;
+  max-width: 1400px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 300px;
+}
+
+.card {
+  font-family: Raleway;
+  width: calc((1vh + 1vw) * 14);
+  height: calc((1vh + 1vw) * 13);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.link-container {
+  display: flex;
+  gap: 30px;
+}
+
+.demolink {
+  font-size: calc((1vh + 1vw) * 0.8);
+  font-weight: 500;
+  color: #F4F6F1;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.demolink:hover {
+  color: #C0EA6A;
+  text-decoration: none;
+  filter: drop-shadow(0px 0px 5px #C0EA6A);
+  transition: 0.4s;
+}
+
+.gitlink {
+  font-size: calc((1vh + 1vw) * 0.8);
+  font-weight: 500;
+  color: #F4F6F1;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.gitlink:hover {
+  color: #7F59F7;
+  text-decoration: none;
+  filter: drop-shadow(0px 0px 5px #C0EA6A);
+  transition: 0.4s;
+}
+
+.frontlink {
+  font-size: calc((1vh + 1vw) * 0.8);
+  font-weight: 500;
+  color: #F4F6F1;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.frontlink:hover {
+  color: #00B2FF;
+  text-decoration: none;
+  filter: drop-shadow(0px 0px 5px #C0EA6A);
+  transition: 0.4s;
+}
+
+.projname {
+  color: #fff;
+  text-align: center;
+  font-size: calc(1vh + 1vw);
+}
+
+.fr1 {
+  background: no-repeat top/contain url(../resources/fr1.webp);
+}
+
+.fr2 {
+  background: no-repeat top/contain url(../resources/fr2.webp);
+}
+
+.fr3 {
+  background: no-repeat top/contain url(../resources/fr3.webp);
+}
+
+.fr4 {
+  background: no-repeat top/contain url(../resources/fr4.webp);
+}
+
+.fr5 {
+  background: no-repeat top/contain url(../resources/fr5.webp);
+}
+
+.fr6 {
+  background: no-repeat top/contain url(../resources/fr6.webp);
+}
+
+.fr7 {
+  background: no-repeat top/contain url(../resources/fr7.webp);
+}
+
+.fr8 {
+  background: no-repeat top/contain url(../resources/fr8.webp);
+}
+
+.fr9 {
+  background: no-repeat top/contain url(../resources/fr9.webp);
+}
+
+.fr10 {
+  background: no-repeat top/contain url(../resources/fr10.webp);
+}
+
+.fr11 {
+  background: no-repeat top/contain url(../resources/fr11.webp);
+}
+
+.hero-section {
+  margin-top: 300px;
+  background-color: white;
+  width: 100%;
+  height: 50vh;
+  font-size: 100px;
+  padding-top: 40px;
+  font-family: "Kaushan Script";
+  font-weight: 100;
+  text-align: center;
+  border-radius: 30px;
+}
+.hero-section p {
+  margin-top: 50px;
+}
+
+.logo {
+  margin: auto;
+  width: 80%;
+}/*# sourceMappingURL=main.css.map */
