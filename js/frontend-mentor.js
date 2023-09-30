@@ -43,7 +43,7 @@ itemsLeft.forEach(item => {
     scrollTrigger: {
       trigger: item,
       start: '-100',
-      end: '0',
+      end: '200',
       scrub: true,
       // markers: true
     }
@@ -72,7 +72,7 @@ itemsRight.forEach(item => {
     scrollTrigger: {
       trigger: item,
       start: '-100',
-      end: '0',
+      end: '200',
       scrub: true,
       // markers: true
     }
@@ -101,7 +101,7 @@ itemsCenter.forEach(item => {
     scrollTrigger: {
       trigger: item,
       start: '-100',
-      end: '0',
+      end: '200',
       scrub: true,
       // markers: true
     }
