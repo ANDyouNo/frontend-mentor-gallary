@@ -219,6 +219,10 @@ body {
   background: no-repeat top/contain url(../resources/fr11.webp);
 }
 
+.fr12 {
+  background: no-repeat top/contain url(../resources/fr12.webp);
+}
+
 .hero-section {
   margin-top: 300px;
   background-color: white;
